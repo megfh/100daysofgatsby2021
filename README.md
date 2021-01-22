@@ -1,3 +1,18 @@
+# #100DaysOfGatsby Challenge
+
+This project will be updated as I work through the 2021 100 Days of Gatsby Challenge.
+
+## [Sprint #1](https://www.gatsbyjs.com/blog/100days-challenge-1/?utm_campaign=100%20Days%20of%20Gatsby&utm_medium=email&_hsmi=104914724&_hsenc=p2ANqtz--DtdcGaLnukquJMmkyre-5KLBxYd9X9eYewCclORR-xhnK3FsyvGvI247hieKcc3OY1VsOawggBAxbr3MH3m4PPvitug&utm_content=104914409&utm_source=hs_email):
+
+- proof of concept site
+- setup skeleton gatsby site
+- use contentful as the CMS
+- use the [File System Route API](https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/#gatsbypath-example) to create pages
+  - home
+  - about
+  - 3 cities under /location
+- build and deploy on Gatsby Cloud
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
