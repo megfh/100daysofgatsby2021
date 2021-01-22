@@ -10,6 +10,9 @@ if (process.env.CONTENTFUL_HOST) {
 module.exports = {
   siteMetadata: {
     title: "audio core",
+    description: `100 days of Gatsby 2021 Challenge`,
+    author: `@megfh`,
+    siteUrl: `localhost:XXXX`
   },
   plugins: [
     {
