@@ -1,3 +1,12 @@
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+};
+
+if (process.env.CONTENTFUL_HOST) {
+  contentfulConfig.host = process.env.CONTENTFUL_HOST;
+}
+
 module.exports = {
   siteMetadata: {
     title: "audio core",
@@ -5,10 +14,7 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-source-contentful",
-      options: {
-        accessToken: "SHHGV7P1cg5jTqszZvPEHjHfPgE5miDp5B9VhR3WbNE",
-        spaceId: "3ihbmrd89k97",
-      },
+      options: contentfulConfig
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
