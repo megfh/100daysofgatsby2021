@@ -1,3 +1,8 @@
+// Initialize dotenv
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`, 
+});
+
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -23,6 +28,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -31,5 +37,15 @@ module.exports = {
       },
       __key: "images",
     },
+    "@chakra-ui/gatsby-plugin", 
+    {
+      resolve: `gatsby-source-formium`,
+      options: {
+        // Get your projectId from https://dashboard.formium.io
+        projectId: process.env.GATSBY_FORMIUM_PROJECTID,
+        // Generate a personal access token by going to https://dashboard.formium.io/account#tokens
+        accessToken: process.env.FORMIUM_TOKEN,
+      },
+    }
   ],
 };

@@ -1,39 +1,17 @@
 import React from 'react'; 
 import { Link, graphql } from 'gatsby'; 
+import { StaticImage } from "gatsby-plugin-image"
+import { Box, Text } from "@chakra-ui/react"
+import Layout from '../components/layout/Layout'; 
+import Hero from "../components/sections/Hero";
 
 export default function HomePage({ data }) {
   return ( 
-    <div>
-    <h1>audioCORE</h1>
-      <Link to="/about">About</Link>
-      <h2>Cities</h2>
-      <ul>
-        {data.allContentfulCity.edges.map(({node:city}) => (
-          <li key={city.name}>
-            <Link to={city.gatsbyPath}>{city.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Layout>
+      <Hero
+        
+      />
+    </Layout>
     
   )
 }
-
-export const query = graphql`
-query AllCities {
-  allContentfulCity {
-    edges {
-      node {
-        name
-        description
-        coordinates {
-          lat
-          lon
-        }
-        gatsbyPath(filePath: "/location/{contentfulCity.name}")
-      }
-    }
-  }
-}
-
-`

@@ -1,1 +1,42 @@
-{"name":"audio-core","version":"1.0.0","private":true,"description":"audio core","author":"Meghan Hannon","keywords":["gatsby"],"scripts":{"develop":"gatsby develop","start":"gatsby develop","build":"gatsby build","serve":"gatsby serve","clean":"gatsby clean"},"dependencies":{"gatsby":"^2.26.1","gatsby-image":"^2.10.0","gatsby-plugin-react-helmet":"^3.9.0","gatsby-plugin-sharp":"^2.13.1","gatsby-plugin-sitemap":"^2.11.0","gatsby-source-contentful":"^2.1.86","gatsby-source-filesystem":"^2.10.0","gatsby-transformer-sharp":"^2.11.0","react":"^16.13.1","react-dom":"^16.13.1","react-helmet":"^6.1.0"}}
+{
+  "name": "audio-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "audio core",
+  "author": "Meghan Hannon",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "GATSBY_ENV=development gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^1.0.1",
+    "@chakra-ui/icons": "^1.0.5",
+    "@chakra-ui/react": "^1.3.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@formium/client": "^0.1.3",
+    "@formium/react": "^0.1.3",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^3.3.0",
+    "gatsby": "^2.26.1",
+    "gatsby-image": "^2.10.0",
+    "gatsby-plugin-config": "^1.0.7",
+    "gatsby-plugin-image": "^0.7.1",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-plugin-sharp": "^2.13.1",
+    "gatsby-plugin-sitemap": "^2.11.0",
+    "gatsby-source-contentful": "^4.6.1",
+    "gatsby-source-filesystem": "^2.11.0",
+    "gatsby-source-formium": "^0.1.1",
+    "gatsby-transformer-sharp": "^2.11.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  }
+}

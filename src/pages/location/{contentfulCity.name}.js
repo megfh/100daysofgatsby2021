@@ -1,9 +1,10 @@
 import React from 'react'; 
 import { graphql } from 'gatsby'; 
+import Layout from '../../components/layout/Layout';
 
 export default function City({data}) {
   return (
-    <div>
+    <Layout>
       <h1>
       {data.contentfulCity.name}
       </h1> 
@@ -15,7 +16,7 @@ export default function City({data}) {
       <h3>
           {data.contentfulCity.coordinates.lat}, {data.contentfulCity.coordinates.lon}
       </h3>
-    </div>
+    </Layout>
   )
 }
 
