@@ -18,7 +18,7 @@ module.exports = {
     titleTemplate: "%s · The Headphone Sharing Solution",
     description: `100 days of Gatsby 2021 Challenge`,
     author: `@megfh`,
-    url: `https://100daysofgatsby2021main.gtsb.io`, 
+    siteUrl: `https://100daysofgatsby2021main.gtsb.io`, 
     image: `/images/headphones.jpg`, 
     twitterUsername: "@meghannon4",
   },
