@@ -1,21 +1,37 @@
 import React from 'react'; 
 import { graphql } from 'gatsby'; 
-import Layout from '../../components/layout/Layout';
+//import { GatsbyImage, getImage } from "gatsby-plugin-image"; 
 
-export default function City({data}) {
+import Layout from '../../components/layout/Layout';
+// import { Img } from 'gatsby-image';
+import { Heading, Text, Divider } from '@chakra-ui/react'
+
+export default function City({ data }) {
+  //console.log(data); 
+  //const image = getImage(data.contentfulCity.skylineImage)
+  //console.log(image);
   return (
     <Layout>
-      <h1>
+      <Heading>
       {data.contentfulCity.name}
-      </h1> 
+      </Heading> 
 
-      <h2>
+      <Text fontSize="xl">
           {data.contentfulCity.description}
-      </h2>
+      </Text>
 
-      <h3>
+      <Text fontSize="md">
           {data.contentfulCity.coordinates.lat}, {data.contentfulCity.coordinates.lon}
-      </h3>
+      </Text>
+
+      <Divider/>
+
+      <Text>
+        ToDo: figure out how to use gatsby-plugin-image to have skyline image on this page
+      </Text>
+
+      {/* <GatsbyImage image={image} alt={data.contentfulCity.skylineImage.title}/>  */}
+      {/* <Img fluid={data.contentfulCity.skylineImage.fluid} alt={data.contentfulCity.skylineImage.title} />  */}
     </Layout>
   )
 }
@@ -28,6 +44,13 @@ export const query = graphql`
       coordinates {
         lat
         lon
+      }
+      skylineImage {
+        title
+        fluid {
+          src
+          ...GatsbyContentfulFluid
+        }
       }
     }
   }

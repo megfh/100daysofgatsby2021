@@ -14,10 +14,13 @@ if (process.env.CONTENTFUL_HOST) {
 
 module.exports = {
   siteMetadata: {
-    title: "audio core",
+    title: "audioC0RE",
+    titleTemplate: "%s · The Headphone Sharing Solution",
     description: `100 days of Gatsby 2021 Challenge`,
     author: `@megfh`,
-    siteUrl: `localhost:XXXX`
+    url: `https://100daysofgatsby2021main.gtsb.io`, 
+    image: `/images/headphones.jpg`, 
+    twitterUsername: "@meghannon4",
   },
   plugins: [
     {
@@ -28,6 +31,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
+    "gatsby-image",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-source-filesystem",
@@ -46,6 +50,20 @@ module.exports = {
         // Generate a personal access token by going to https://dashboard.formium.io/account#tokens
         accessToken: process.env.FORMIUM_TOKEN,
       },
-    }
+    }, 
+    // "gatsby-plugin-preact"
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`
+      },
+    },
+    "gatsby-plugin-offline"
   ],
 };

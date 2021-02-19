@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
-import PropTypes from "prop-types";
 import {
   Box,
   Button,
   Flex,
-  Image,
   Heading,
-  Stack,
-  Text
+  Stack
 } from "@chakra-ui/react";
 
 export default function Hero() {

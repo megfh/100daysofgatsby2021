@@ -3,12 +3,7 @@ import { Link, graphql, StaticQuery } from "gatsby";
 import { Box, Flex, Text, Button, Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuCommand,
-  MenuDivider,
+  MenuItem
 } from "@chakra-ui/react";
 import { ChevronDownIcon }  from '@chakra-ui/icons'
 import Logo from "../ui/Logo";

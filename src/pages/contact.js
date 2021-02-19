@@ -1,7 +1,6 @@
 import React from 'react'; 
-import { Link } from 'gatsby'; 
 import Layout from '../components/layout/Layout';
-import { Box, Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import { graphql } from 'gatsby';
 import { FormiumForm } from '@formium/react';
 import { formium } from '../lib/formium';
