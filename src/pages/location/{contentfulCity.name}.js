@@ -1,15 +1,10 @@
 import React from 'react'; 
 import { graphql } from 'gatsby'; 
-//import { GatsbyImage, getImage } from "gatsby-plugin-image"; 
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"; 
 import Layout from '../../components/layout/Layout';
-// import { Img } from 'gatsby-image';
 import { Heading, Text, Divider } from '@chakra-ui/react'
 
 export default function City({ data }) {
-  //console.log(data); 
-  //const image = getImage(data.contentfulCity.skylineImage)
-  //console.log(image);
   return (
     <Layout>
       <Heading>
@@ -26,12 +21,7 @@ export default function City({ data }) {
 
       <Divider/>
 
-      <Text>
-        ToDo: figure out how to use gatsby-plugin-image to have skyline image on this page
-      </Text>
-
-      {/* <GatsbyImage image={image} alt={data.contentfulCity.skylineImage.title}/>  */}
-      {/* <Img fluid={data.contentfulCity.skylineImage.fluid} alt={data.contentfulCity.skylineImage.title} />  */}
+      <GatsbyImage image={data.contentfulCity.skylineImage.gatsbyImageData} alt={data.contentfulCity.skylineImage.title}/> 
     </Layout>
   )
 }
@@ -47,10 +37,7 @@ export const query = graphql`
       }
       skylineImage {
         title
-        fluid {
-          src
-          ...GatsbyContentfulFluid
-        }
+        gatsbyImageData
       }
     }
   }
