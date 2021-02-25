@@ -5,32 +5,34 @@ import { graphql } from 'gatsby';
 import { FormiumForm, defaultComponents } from '@formium/react';
 import { formium } from '../lib/formium';
 
-function TextInput(props) {
-  return <Input 
-          placeholder={props.placeholder} 
-          size="md" 
-          variant="outline"
-          focusBorderColor="purple.800"
-        />
-}
+// function TextInput(props) {
+//   return <Input 
+//           placeholder={props.placeholder} 
+//           size="md" 
+//           variant="outline"
+//           focusBorderColor="purple.800"
+//         />
+// }
 
-function Textarea(props) {
-  return <ChakraTextarea focusBorderColor="purple.800"></ChakraTextarea>
-}
+// function Textarea(props) {
+//   return <ChakraTextarea focusBorderColor="purple.800"></ChakraTextarea>
+// }
 
-function SubmitButton(props) {
-  return <Button colorScheme="purple">Submit</Button>
-}
+// function SubmitButton(props) {
+//   return <Button colorScheme="purple" {...props} >Submit</Button>
+// }
 
-function Header(props){
-    const { page: {title} } = props
+// function Header(props){
+//     const { page: {title} } = props
     
-    return (
-        <Heading as="h4" marginTop="4" marginBottom="4" size="lg" colorScheme="purple">{title}</Heading>
-    )
-}
+//     return (
+//         <Heading as="h4" marginTop="4" marginBottom="4" size="lg" colorScheme="purple">{title}</Heading>
+//     )
+// }
 
-const myComponents = { ...defaultComponents, TextInput, Textarea, SubmitButton, Header }; 
+// const myComponents = { ...defaultComponents, TextInput, Textarea, SubmitButton, Header }; 
+
+const myComponents = { ...defaultComponents }; 
 
 export default function Contact({ data }) {
   const [success, setSuccess] = React.useState(false);

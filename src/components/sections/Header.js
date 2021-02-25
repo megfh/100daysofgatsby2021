@@ -90,7 +90,7 @@ const HeaderComponent = ({ data }) => {
             </MenuButton>
             <MenuList>
               {data.allContentfulCity.edges.map(({node:city}) => (
-                <Link to={city.gatsbyPath}>
+                <Link to={city.gatsbyPath} key={city.name}>
                   <MenuItem key={city.name}>
                     {city.name}
                   </MenuItem>
