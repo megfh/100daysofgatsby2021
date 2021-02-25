@@ -90,15 +90,12 @@ const HeaderComponent = ({ data }) => {
             </MenuButton>
             <MenuList>
               {data.allContentfulCity.edges.map(({node:city}) => (
-                <MenuItem key={city.name}>
-                  <Link to={city.gatsbyPath}>{city.name}</Link>
-                </MenuItem>
+                <Link to={city.gatsbyPath}>
+                  <MenuItem key={city.name}>
+                    {city.name}
+                  </MenuItem>
+                </Link>
               ))}
-              {/* <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem> */}
             </MenuList>
           </Menu>
         </Flex>
