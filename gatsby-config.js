@@ -27,6 +27,16 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig
     },
+    {
+      resolve: "gatsby-source-wordpress", 
+      options: {
+        url: process.env.WPGRAPHQL_URL, 
+        schema: {
+          perPage: 10, 
+          timeout: 60000
+        }
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

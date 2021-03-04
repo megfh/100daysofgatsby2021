@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { graphql } from 'gatsby'; 
-import { GatsbyImage, getImage } from "gatsby-plugin-image"; 
+import { GatsbyImage } from "gatsby-plugin-image"; 
 import Layout from '../../components/layout/Layout';
 import { Heading, Text, Divider } from '@chakra-ui/react'
 
