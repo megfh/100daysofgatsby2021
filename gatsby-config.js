@@ -33,8 +33,14 @@ module.exports = {
         url: process.env.WPGRAPHQL_URL, 
         schema: {
           perPage: 10, 
-          timeout: 60000
-        }
+          timeout: 60000, 
+          requestConcurrency: 5, 
+          previewRequestConcurrency: 2, 
+        }, 
+        develop: {
+          hardCacheMediaFiles: true,
+          hardCacheData: true,
+        },
       }
     },
     "gatsby-plugin-sharp",
@@ -42,7 +48,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     "gatsby-image",
-    "gatsby-plugin-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -61,6 +66,15 @@ module.exports = {
         accessToken: process.env.FORMIUM_TOKEN,
       },
     }, 
+    {
+      resolve: "gatsby-source-shopify",
+      options: {
+        apiKey: process.env.SHOPIFY_ADMIN_API_KEY,
+        password: process.env.SHOPIFY_ADMIN_PASSWORD,
+        storeUrl: process.env.SHOPIFY_STORE_URL,
+      },
+    },
+    "gatsby-plugin-image",
     // "gatsby-plugin-preact"
     {
       resolve: `gatsby-plugin-manifest`,
