@@ -83,6 +83,8 @@ const HeaderComponent = ({ data }) => {
         >
           <NavItem to="/about">About</NavItem>
           <NavItem to="/contact">Contact</NavItem>
+          <NavItem to="/blog">Blog</NavItem>
+          <NavItem to="/shop">Shop</NavItem>
           <Menu bg={["purple.700", "purple.700", "transparent", "transparent"]}
       color={["white", "white", "purple.800", "purple.800"]}>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
