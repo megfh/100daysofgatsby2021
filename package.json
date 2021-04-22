@@ -38,7 +38,7 @@
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-source-formium": "^0.1.1",
     "gatsby-source-graphql": "^2.14.0",
-    "gatsby-source-shopify": "^5.0.0-rc.9",
+    "gatsby-source-shopify": "^5.0.0-rc.11",
     "gatsby-source-shopify-experimental": "^1.13.3",
     "gatsby-source-wordpress": "^4.0.3",
     "gatsby-transformer-sharp": "^2.11.0",
