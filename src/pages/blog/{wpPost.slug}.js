@@ -1,16 +1,25 @@
 import React from 'react'; 
-import { graphql } from 'gatsby'; 
+import { graphql, Link } from 'gatsby'; 
 import Layout from '../../components/layout/Layout';
 import { Heading, Text } from '@chakra-ui/react'
 
 export default function City({ data }) {
   return (
     <Layout>
-      <Heading>
-      {data.wpPost.title}
-      </Heading> 
-
-      <Text dangerouslySetInnerHTML={{ __html: data.wpPost.content }} fontSize="xl"/>
+      <Heading color="purple.800">
+        {data.wpPost.title}
+      </Heading>
+      <Text>{data.wpPost.date}</Text> 
+      <Text 
+        dangerouslySetInnerHTML={{ __html: data.wpPost.content }} 
+        fontSize="xl"
+        my="5"
+        mx="10"
+        maxW="600px"
+      />
+      <Text color="purple.800" fontSize="xl" m="5">
+        <Link to="/blog">Blog Home</Link>
+      </Text>
     </Layout>
   )
 }
@@ -19,6 +28,7 @@ export const query = graphql`
   query ($id: String = "") {
     wpPost(id: {eq: $id}) {
       title
+      date(formatString: "DD MMMM, YYYY")
       content
       slug
       id

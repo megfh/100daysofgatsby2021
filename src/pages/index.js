@@ -1,7 +1,7 @@
 import React from 'react'; 
 import Layout from '../components/layout/Layout'; 
 import Hero from "../components/sections/Hero";
-import { Box, Divider, Flex, Heading, Text } from '@chakra-ui/react'; 
+import { Box, Divider, Flex, Heading, Text, SimpleGrid } from '@chakra-ui/react'; 
 import { graphql, Link } from 'gatsby'
 
 export default function HomePage({ data }) {
@@ -14,22 +14,25 @@ export default function HomePage({ data }) {
         m="1em"
         p="1em"
         align="center"
+        w="full"
       >
         <Heading
           color="primary.800"
         >
           Latest Blog Posts
         </Heading>
-        <Flex
-          wrap="wrap"
-          align="center"
-          justify="space-evenly"
+        <SimpleGrid
+          minChildWidth="300px"
+          spacing="25px"
+          w="full"
+          justifyContent="space-around"
+          justifyItems="center"
           p="1em"
         >
           {data.allWpPost.edges.map(({node:post}) => (
             <Box m="10px" p="10px" grow="1" maxW="400px" key={post.slug}>
             <Link to={'/blog/' + post.slug}>
-              <Heading as="h4" size="lg" color="primary.800">
+              <Heading as="h4" size="lg" color="primary.800" mb="1.5">
                 {post.title}
               </Heading>
               <Text dangerouslySetInnerHTML={{ __html: post.excerpt }} isTruncated="true">
@@ -40,7 +43,7 @@ export default function HomePage({ data }) {
           </Box>
           ))}
           
-        </Flex>
+        </SimpleGrid>
       </Flex>
     </Layout>
     
@@ -49,11 +52,11 @@ export default function HomePage({ data }) {
 
 export const query = graphql`
   query wpPost {
-    allWpPost {
+    allWpPost(sort: { fields: date, order: DESC}, limit: 3) {
       edges {
         node {
           title
-          content
+          date
           id
           slug
           excerpt
@@ -61,5 +64,4 @@ export const query = graphql`
       }
     }
   }
-
 `
