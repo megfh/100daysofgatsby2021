@@ -1,6 +1,6 @@
 import React from 'react'; 
 import Layout from '../components/layout/Layout';
-import { Box, Flex, SimpleGrid, GridItem, Heading, Text } from "@chakra-ui/react"
+import { Box, Flex, SimpleGrid, Heading, Text } from "@chakra-ui/react"
 import { graphql, Link } from 'gatsby'; 
 
 export default function Blog({ data }) {
