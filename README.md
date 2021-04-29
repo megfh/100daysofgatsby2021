@@ -1,6 +1,7 @@
 # audioC0RE (WIP)
 
-My take on the 2021 #100DaysOfGatsby Challenge.
+My take on the 2021 #100DaysOfGatsby Challenge. See it live [here](https://100daysofgatsby2021main.gtsb.io/)
+
 A website for the fictional headphone sharing startup, audioC0RE. Built with:
 
 - [Gatsby](https://www.gatsbyjs.com/)
