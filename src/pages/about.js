@@ -7,7 +7,7 @@ export default function About() {
     <Layout>
       <Box>
       <h1>audioCORE</h1>
-      <h2>This is the about page</h2>
+      <h2>TODO: about page</h2>
       </Box>
     </Layout>
   )

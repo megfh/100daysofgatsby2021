@@ -15,9 +15,11 @@ export default function City({ data }) {
           {data.contentfulCity.description}
       </Text>
 
-      <Text fontSize="md">
+      <Text>TODO: proper styling on this page</Text>
+
+      {/* <Text fontSize="md">
           {data.contentfulCity.coordinates.lat}, {data.contentfulCity.coordinates.lon}
-      </Text>
+      </Text> */}
 
       <Divider/>
 
