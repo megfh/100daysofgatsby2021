@@ -9,7 +9,6 @@ export default function Shop({ data }) {
     <Layout>
       <Flex
         direction="column"
-        m="1em"
         p="1em"
         align="center"
         w="full"
@@ -43,7 +42,7 @@ export default function Shop({ data }) {
                 <Box borderBottom="1px" borderColor="gray.200">
                   <GatsbyImage 
                     image={product.featuredImage.gatsbyImageData}
-                    alt="alt text here"
+                    alt={product.featuredImage.altText}
                   />
                 </Box>
                 <Flex direction="column" p="2" color="primary.800">
@@ -71,15 +70,9 @@ query shopify {
   allShopifyProduct {
     edges {
       node {
-        description
         title
-        totalInventory
         priceRangeV2 {
           maxVariantPrice {
-            amount
-            currencyCode
-          }
-          minVariantPrice {
             amount
             currencyCode
           }
