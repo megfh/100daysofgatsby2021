@@ -13,6 +13,5 @@ A website for the fictional headphone sharing startup, audioC0RE. Built with:
 
 ### ToDo
 
-- style /location/\* pages
 - footer
 - fix issue with colours in menu (mobile)
