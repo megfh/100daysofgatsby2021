@@ -17,7 +17,7 @@ export default function City({ data }) {
         direction={{ base: "column", md: "row" }}
         wrap="no-wrap"
         minH="40vh"
-        px={8}
+        p={8}
       >
         <Stack
           spacing={3}

@@ -23,7 +23,7 @@ export default function Hero() {
       wrap="no-wrap"
       minH="70vh"
       px={8}
-      mb={16}
+      my={16}
     >
       <Stack
         spacing={4}

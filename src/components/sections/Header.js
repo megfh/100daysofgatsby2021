@@ -55,7 +55,6 @@ const HeaderComponent = ({ data }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
       p={6}
       bg={["purple.700", "purple.700", "transparent", "transparent"]}
       color={["white", "white", "purple.800", "purple.800"]}
