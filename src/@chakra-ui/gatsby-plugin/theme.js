@@ -14,13 +14,6 @@ const colors = {
   }
 };
 
-const components = {
-  Menu: {
-    bg : ["purple.700", "purple.700", "transparent", "transparent"],
-    color : ["white", "white", "purple.800", "purple.800"]
-  }
-}
-
-const theme = extendTheme({ colors, components });
+const theme = extendTheme({ colors });
 
 export default theme;

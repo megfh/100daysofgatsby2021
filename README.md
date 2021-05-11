@@ -1,4 +1,4 @@
-# audioC0RE (WIP)
+# audioC0RE
 
 My take on the 2021 #100DaysOfGatsby Challenge. See it live [here](https://100daysofgatsby2021main.gtsb.io/)
 
@@ -20,6 +20,3 @@ A website for the fictional headphone sharing startup, audioC0RE.
 - San Fransisco skyline - Photo by <a href="https://unsplash.com/@ev25?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Evgeny Tchebotarev</a> on <a href="https://unsplash.com/s/photos/san-fransisco-skyline?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
 
 
-### ToDo
-
-- fix issue with colours in menu (mobile)

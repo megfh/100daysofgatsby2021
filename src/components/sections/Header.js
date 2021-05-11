@@ -84,15 +84,29 @@ const HeaderComponent = ({ data }) => {
           <NavItem to="/contact">Contact</NavItem>
           <NavItem to="/blog">Blog</NavItem>
           <NavItem to="/shop">Shop</NavItem>
-          <Menu bg={["purple.700", "purple.700", "transparent", "transparent"]}
-      color={["white", "white", "purple.800", "purple.800"]}>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+          <Menu>
+            <MenuButton 
+              as={Button} 
+              rightIcon={<ChevronDownIcon />}
+              fontWeight="medium"
+              bg={["purple.700", "purple.700", "transparent", "transparent"]}
+              color={["white", "white", "purple.800", "purple.800"]}
+              _focus={{ bg: "gray.100", color: "primary.800"}}
+              _hover={{ bg: "gray.100", color: "primary.800"}}
+              _active={{ bg: "gray.100", color: "primary.800"}}
+            >
               Cities
             </MenuButton>
-            <MenuList>
+            <MenuList
+              bg="white"
+              color="primary.800"
+            >
               {data.allContentfulCity.edges.map(({node:city}) => (
                 <Link to={city.gatsbyPath} key={city.name}>
-                  <MenuItem key={city.name}>
+                  <MenuItem 
+                    key={city.name}
+                    _focus={{ bg: "gray.100", color: "primary.800"}}
+                  >
                     {city.name}
                   </MenuItem>
                 </Link>
