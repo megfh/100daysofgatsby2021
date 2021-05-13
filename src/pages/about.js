@@ -1,5 +1,6 @@
 import React from 'react'; 
 import Layout from '../components/layout/Layout';
+import Footer from '../components/sections/Footer'; 
 import { Flex, Stack, Heading, Box, Button, Text, useToast } from "@chakra-ui/react"
 import { Link } from 'gatsby'; 
 import { StaticImage } from 'gatsby-plugin-image'
@@ -120,6 +121,7 @@ export default function About() {
           </Link>
         </Stack>
       </Flex>
+      <Footer />
     </Layout>
   )
 }

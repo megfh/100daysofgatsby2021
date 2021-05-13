@@ -78,7 +78,10 @@ export default function Contact({ data }) {
 
   return (
     <Layout>
-      <Box w={400}>
+      <Box 
+        w={{base: "full", lg: "96"}}
+        p={5}
+      >
         <FormiumForm
           data={data.formiumForm}
           components={myComponents}

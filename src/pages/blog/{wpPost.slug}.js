@@ -6,7 +6,10 @@ import { Heading, Text } from '@chakra-ui/react'
 export default function City({ data }) {
   return (
     <Layout>
-      <Heading color="purple.800">
+      <Heading 
+        color="purple.800"
+        mt={5}
+      >
         {data.wpPost.title}
       </Heading>
       <Text>{data.wpPost.date}</Text> 
