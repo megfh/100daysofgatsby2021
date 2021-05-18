@@ -36,7 +36,7 @@ export default function About() {
           </Heading>
           <Text
             color="primary.900"
-            size="lg"
+            fontSize="lg"
           >
             Ever find yourself walking down the street, ready to listen to your favourite podcast, only to realize you forgot your AirPods at home? With audioC0RE, you'll never have that problem again - simply open the app, rent a pair of our premium headphones, and listen to your heart's delight. 
           </Text>
@@ -103,7 +103,7 @@ export default function About() {
           </Heading>
           <Text
             color="primary.900"
-            size="lg"
+            fontSize="lg"
           >
             And more cities coming soon! We are the leading headphones sharing app in the world, and we're just getting started. Where should we go next? Let us know!
           </Text>

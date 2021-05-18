@@ -48,5 +48,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "shopify-buy": "^2.11.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22"
   }
 }

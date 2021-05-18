@@ -14,7 +14,7 @@ export default function Footer () {
         <Text>Made with <span role="img" aria-label="purple heart emoji">💜</span> by&nbsp;
             <Link 
                 href="https://github.com/megfh/100daysofgatsby2021"
-                color="purple.700"
+                color="primary.700"
                 isExternal
             >
                  megfh

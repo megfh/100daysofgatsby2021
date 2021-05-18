@@ -21,7 +21,7 @@ export default function Hero() {
       justify={{ base: "center", md: "space-around", xl: "space-between" }}
       direction={{ base: "column-reverse", md: "row" }}
       wrap="no-wrap"
-      minH="70vh"
+      minH="80vh"
       px={8}
       my={16}
     >
@@ -42,7 +42,7 @@ export default function Hero() {
         <Heading
           as="h2"
           size="md"
-          color="primary.800"
+          color="primary.900"
           opacity="0.8"
           fontWeight="normal"
           lineHeight={1.5}

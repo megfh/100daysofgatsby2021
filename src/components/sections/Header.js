@@ -56,13 +56,13 @@ const HeaderComponent = ({ data }) => {
       wrap="wrap"
       w="100%"
       p={6}
-      bg={["purple.700", "purple.700", "transparent", "transparent"]}
-      color={["white", "white", "purple.800", "purple.800"]}
+      bg={["primary.700", "primary.700", "transparent", "transparent"]}
+      color={["white", "white", "primary.800", "primary.800"]}
     >
       <Flex align="center">
         <Logo
           w="150px"
-          color={["white", "white", "purple.700", "purple.700"]}
+          color={["white", "white", "primary.800", "primary.800"]}
         />
       </Flex>
 
@@ -89,8 +89,8 @@ const HeaderComponent = ({ data }) => {
               as={Button} 
               rightIcon={<ChevronDownIcon />}
               fontWeight="medium"
-              bg={["purple.700", "purple.700", "transparent", "transparent"]}
-              color={["white", "white", "purple.800", "purple.800"]}
+              bg={["primary.700", "primary.700", "transparent", "transparent"]}
+              color={["white", "white", "primary.800", "primary.800"]}
               _focus={{ bg: "gray.100", color: "primary.800"}}
               _hover={{ bg: "gray.100", color: "primary.800"}}
               _active={{ bg: "gray.100", color: "primary.800"}}

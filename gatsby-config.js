@@ -75,7 +75,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
-    // "gatsby-plugin-preact"
+    "gatsby-plugin-preact",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -88,6 +88,12 @@ module.exports = {
         icon: `src/images/icon.png`
       },
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline", 
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+      },
+    }
   ],
 };
