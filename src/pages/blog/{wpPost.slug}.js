@@ -9,6 +9,8 @@ export default function City({ data }) {
       <Heading 
         color="purple.800"
         mt={5}
+        mx="2"
+        textAlign="center"
       >
         {data.wpPost.title}
       </Heading>
@@ -19,6 +21,7 @@ export default function City({ data }) {
         my="5"
         mx="10"
         maxW="600px"
+        listStylePosition="inside"
       />
       <Text color="purple.800" fontSize="xl" m="5">
         <Link to="/blog">Blog Home</Link>

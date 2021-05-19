@@ -30,7 +30,7 @@ export default function Blog({ data }) {
           {data.allWpPost.edges.map(({node:post}) => (
             <Box m="10px" p="10px" grow="1" maxW="400px" key={post.slug}>
             <Link to={'/blog/' + post.slug}>
-              <Heading as="h4" size="lg" color="primary.800" mb="1.5">
+              <Heading as="h4" size="lg" color="primary.800" mb="1.5" textAlign="center">
                 {post.title}
               </Heading>
               <Text dangerouslySetInnerHTML={{ __html: post.excerpt }} isTruncated="true">

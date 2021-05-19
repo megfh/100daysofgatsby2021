@@ -15,6 +15,7 @@ export default function Shop({ data }) {
       >
         <Heading
           color="primary.800"
+          textAlign="center"
         >
           audioC0RE Swag Shop
         </Heading>
